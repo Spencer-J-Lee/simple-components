@@ -1,7 +1,3 @@
-Checkbox
-
-Switch/Toggle
-
 Slider
 
 Menu

@@ -17,7 +17,10 @@ export default class Checkbox extends Component {
   
     return (
       <label className={classes.CheckboxWrapper} style={checkboxStyle}>
-        <input type="checkbox" className={classes.Checkbox}></input>
+        <input 
+          type="checkbox" 
+          className={classes.Checkbox}
+          disabled={this.props.disabled}></input>
         <span className={classes.LabelText}>
           {this.props.text}
         </span>
