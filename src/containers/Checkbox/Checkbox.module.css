@@ -1,0 +1,25 @@
+.CheckboxWrapper {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.Checkbox {
+  display: none;
+}
+
+.LabelText {
+  color: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.LabelText:before {
+  content: '\f0c8';
+  font-family: "FontAwesome";
+  font-style: normal;
+  margin-right: 0.6em;
+}
+
+.Checkbox:checked + .LabelText:before {
+  content: '\f14a';
+}

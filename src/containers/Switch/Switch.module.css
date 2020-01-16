@@ -1,0 +1,49 @@
+.SwitchWrapper {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.Checkbox {
+  display: none;
+}
+
+.Toggle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 78px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+}
+
+.Circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  transform: scale(0.75);
+  background-color: black;
+  border-radius: 50%;
+  transition: left 0.3s ease, background-color 0.3s ease;;
+}
+
+.Checkbox:checked + .Toggle {
+  background-color: black;
+}
+
+.Checkbox:checked + .Toggle > .Circle {
+  left: 49%;
+  background-color: #eee;
+}
+
+.LabelText {
+  color: inherit;
+  width: 200px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}

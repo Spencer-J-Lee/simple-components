@@ -1,0 +1,11 @@
+Checkbox
+
+Switch/Toggle
+
+Slider
+
+Menu
+
+Button
+
+Progress Bar
