@@ -26,7 +26,8 @@ function App() {
 
       <DisplayBox title="Slider">
         <div className={classes.ContentWrapper}>
-          <Slider />
+          <Slider type="square"/>
+          <Slider type="round"/>
         </div>
       </DisplayBox>
 
