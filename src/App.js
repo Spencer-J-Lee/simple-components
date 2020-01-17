@@ -2,6 +2,7 @@ import React from 'react';
 import Checkbox from './containers/Checkbox/Checkbox';
 import Switch from './containers/Switch/Switch';
 import Slider from './containers/Slider/Slider';
+import Button from './components/Button/Button';
 import DisplayBox from './components/DisplayBox/DisplayBox';
 import classes from './App.module.css';
 
@@ -28,6 +29,12 @@ function App() {
         <div className={classes.ContentWrapper}>
           <Slider type="square"/>
           <Slider type="round"/>
+        </div>
+      </DisplayBox>
+
+      <DisplayBox title="Button">
+        <div className={classes.ContentWrapper}>
+          <Button>Click Me</Button>
         </div>
       </DisplayBox>
 
