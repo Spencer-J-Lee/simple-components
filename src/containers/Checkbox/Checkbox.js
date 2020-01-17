@@ -26,7 +26,7 @@ export default class Checkbox extends Component {
           className={classes.Checkbox}
           disabled={this.props.disabled}
           checked={this.state.checked}
-          onClick={this.checkedHandler}></input>
+          onChange={this.checkedHandler}></input>
         <span className={classes.LabelText}>
           {this.props.text}
         </span>

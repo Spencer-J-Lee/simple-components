@@ -1,0 +1,43 @@
+.ProgressBarWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ProgressHolder {
+  position: relative;
+  width: 80%;
+  height: 36px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.ProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36px;
+  transition: background-color 1s ease;
+}
+
+.Red {
+  background-color: #E54D41;
+}
+
+.Orange {
+  background-color: #E87C31;
+}
+
+.Yellow {
+  background-color: #FCD654;
+}
+
+.Green {
+  background-color: #39CA74;
+}
+
+.Btns5, .Btns10 {
+  transform: scale(0.7);
+}
