@@ -6,7 +6,7 @@
   cursor: pointer;
   outline: 0;
   margin: 20px;
-  height: 2px;
+  height: 1px;
   border-radius: 10px;
 }
 
@@ -14,19 +14,28 @@
   opacity: 1;
 }
 
+/* .SliderWrapper:hover .Slider::-webkit-slider-thumb {
+  background-color: black;
+} */
+
 .Slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 18px;
-  height: 18px;
-  background-color: #ddd;
-  border: 1px solid black;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border: 3px solid #eee;
   border-radius: 50%;
 }
 
 .Slider::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   background-color: black;
   border-radius: 50%;
+}
+
+.Slider.Vertical {
+  transform: rotate(90deg);
+  width: 200px;
 }

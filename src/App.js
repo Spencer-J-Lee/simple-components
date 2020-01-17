@@ -3,6 +3,7 @@ import Checkbox from './containers/Checkbox/Checkbox';
 import Switch from './containers/Switch/Switch';
 import Slider from './containers/Slider/Slider';
 import Button from './components/Button/Button';
+import Menu from './components/Menu/Menu';
 import DisplayBox from './components/DisplayBox/DisplayBox';
 import classes from './App.module.css';
 
@@ -26,20 +27,20 @@ function App() {
       </DisplayBox>
 
       <DisplayBox title="Slider">
-        <div className={classes.ContentWrapper}>
-          <Slider type="square"/>
-          <Slider type="round"/>
+        <div className={classes.SlidersWrapper}>
+          <Slider />
+          <div className={classes.VertSliderWrapper}>
+            <Slider vertical='true'/>
+          </div>
         </div>
       </DisplayBox>
 
       <DisplayBox title="Button">
-        <div className={classes.ContentWrapper}>
-          <Button>Click Me</Button>
-        </div>
+        <Button>Click Me</Button>
       </DisplayBox>
 
       <DisplayBox title="Menu">
-
+        <Menu />
       </DisplayBox>
 
       <DisplayBox title="Progress Bar">

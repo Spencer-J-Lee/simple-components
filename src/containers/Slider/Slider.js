@@ -11,14 +11,22 @@ export default class Slider extends Component {
   };
 
   render() {
+    let sliderClasses = [classes.Slider];
+
+    if (this.props.vertical) {
+      sliderClasses.push(classes.Vertical);
+    }
+
     return (
-      <input 
-        type="range" 
-        min="0" 
-        max="100" 
-        value={this.state.sliderValue}
-        onChange={this.changeHandler}
-        className={classes.Slider}/>
+      <div className={classes.SliderWrapper}>
+        <input 
+          type="range" 
+          min="0" 
+          max="100" 
+          value={this.state.sliderValue}
+          onChange={this.changeHandler}
+          className={sliderClasses.join(' ')}/>
+      </div>
     );
   };
 };

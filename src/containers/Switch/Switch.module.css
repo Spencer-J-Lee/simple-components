@@ -16,9 +16,14 @@
   width: 78px;
   height: 40px;
   background-color: transparent;
-  border: 1px solid black;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.23);
   border-radius: 100px;
   transition: background-color 0.3s ease;
+  opacity: 0.6;
+}
+
+.Toggle:hover {
+  opacity: 1;
 }
 
 .Circle {
@@ -29,11 +34,12 @@
   transform: scale(0.75);
   background-color: black;
   border-radius: 50%;
-  transition: left 0.3s ease, background-color 0.3s ease;;
+  transition: left 0.3s ease, background-color 0.3s ease;
 }
 
 .Checkbox:checked + .Toggle {
   background-color: black;
+  opacity: 1;
 }
 
 .Checkbox:checked + .Toggle > .Circle {

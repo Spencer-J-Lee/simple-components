@@ -3,6 +3,10 @@
   margin-bottom: 15px;
 }
 
+.CheckboxWrapper:hover .LabelText {
+  opacity: 1;
+}
+
 .Checkbox {
   display: none;
 }
@@ -11,6 +15,14 @@
   color: inherit;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
+  opacity: 0.6;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .LabelText:before {
@@ -18,11 +30,16 @@
   font-family: "FontAwesome";
   font-style: normal;
   margin-right: 0.6em;
+  transform: scale(1);
+}
+
+.Checkbox:checked + .LabelText {
+  opacity: 1;
 }
 
 .Checkbox:checked + .LabelText:before {
   content: '\f14a';
-  animation: pop 0.5s ease-in;
+  animation: pop 1s ease-in;
 }
 
 .Checkbox:disabled + .LabelText:before {

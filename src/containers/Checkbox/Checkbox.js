@@ -6,6 +6,12 @@ export default class Checkbox extends Component {
     checked: false,
   };
 
+  checkedHandler = () => {
+    this.setState(prevState => {
+      return { checked: !prevState.checked };
+    });
+  };
+
   render() {
     const checkboxStyle = {};
 
@@ -13,14 +19,14 @@ export default class Checkbox extends Component {
       checkboxStyle['color'] = this.props.color;
     }
 
-    console.log(checkboxStyle)
-  
     return (
       <label className={classes.CheckboxWrapper} style={checkboxStyle}>
         <input 
           type="checkbox" 
           className={classes.Checkbox}
-          disabled={this.props.disabled}></input>
+          disabled={this.props.disabled}
+          checked={this.state.checked}
+          onClick={this.checkedHandler}></input>
         <span className={classes.LabelText}>
           {this.props.text}
         </span>
